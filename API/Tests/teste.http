@@ -1,0 +1,22 @@
+### Login
+POST http://localhost:5003/auth/login
+Content-Type: application/json
+
+{
+  "email": "teste@email.com",
+  "senha": "123456"
+}
+
+### Listar Itens
+GET http://localhost:5003/item
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdGVAZW1haWwuY29tIiwiZXhwIjoxNzUwMDk4NDgxfQ.sypb_u0O6iuiQxrOPFEOPwTsHM8nIYgOjGRXIeW88Oc
+
+### Comentar
+POST http://localhost:5003/comentario
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdGVAZW1haWwuY29tIiwiZXhwIjoxNzUwMDk4NDgxfQ.sypb_u0O6iuiQxrOPFEOPwTsHM8nIYgOjGRXIeW88Oc
+Content-Type: application/json
+
+{
+  "itemId": 1,
+  "texto": "Esse item é top"
+}
